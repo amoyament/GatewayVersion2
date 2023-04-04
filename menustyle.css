@@ -1,0 +1,404 @@
+/* Menu Page CSS Code */
+/* Affects entire document */
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: lightblue;
+}
+
+/*Header CSS Code*/
+h1 {
+  color: #4d3319;
+  text-align: left;
+  margin: 0% 2%;
+  text-shadow: 3px 3px 3px antiquewhite;
+}
+
+/* Inline display for header to arrange items horizontally */
+  header li {
+  display: inline;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 30px;
+  text-shadow: 1px 1px 1px black;
+}
+  
+/* Pseudo classes on nav. bar items to change color on hover and after click. */
+a:link {
+  color: #546b3e;
+  text-decoration: none;
+}
+
+a:visited {
+  color:#2f3e21;
+}
+
+a:hover {
+  color: green;
+}
+
+/* Position: sticky; to keep nav. bar visible at the top (top: 0;) of the screen at all times. */
+header {
+  text-align: right;
+  background-color: lightblue;
+  position: sticky;
+  top:0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 30px;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+  border-bottom: solid 2px;
+  border-top: solid 2px;
+}
+
+header ol{
+  margin: 10px 40px;
+}
+
+h2 {
+  margin: 40px 0px 15px;
+}
+
+/* Menu Header CSS Code*/
+.menuheader {
+  background-image: url(photos/menubground.jpeg);
+  padding: 20px;
+  margin: 0px;
+  color: #4d3319;
+  text-align: center;
+  align-items: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 30px;
+  text-shadow: 3px 3px 3px lightblue;
+  border-bottom: solid 2px #ffffdb;
+}
+  
+.menuheader h2 {
+  margin: 0px
+}
+
+/* List of Menu Items CSS Code. */
+/* display: grid; to align menu items into columns and rows. */
+/* .menuitem styling to create egg-shaped pods to contain elements (heading, photo, description, order button) within. */
+.menuitem {
+  display: grid;
+  height: 400px;
+  width: 250px;
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+  background-color: #fffff0;
+  border: solid;
+  border-radius: 230px;
+  border-width: 3px;
+  border-color: #4d3319;
+  color: #4d3319;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.menuitem h3 {
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding-top: 0;
+  margin: 15px;
+  line-height: 1;
+}
+
+/* Menu photos are bringing down lighthouse score, beacuse file ratio does not equal display ratio. (Osiel said not to worry about that since developers are usually given images.) */
+.menuphoto {
+  height: 200px;
+  width: 250px;
+  margin: 0;
+  border-radius: 50px;
+}
+
+.orderb {
+  background-color:#744d25;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  color: #fffff0; 
+  border-radius: 25px;
+  cursor: pointer;
+  margin: 1px 80px;
+}
+
+button:hover {
+  background-color: #ae7337;
+}
+
+/* Sets up the grid template for menu items. */
+.menulist {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  place-items: center;
+  margin: 30px 10px 10px;
+}
+
+/* Estabilshes where in the grid template each item will go. */
+.menuitem1{
+  display: grid;
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.menuitem2{
+  display: grid;
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.menuitem3{
+  display: grid;
+  grid-row: 1;
+  grid-column: 3;
+}
+
+.menuitem4{
+  display: grid;
+  grid-row: 1;
+  grid-column: 4;
+}
+
+.menuitem5{
+  display: grid;
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.menuitem6{
+  display: grid;
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.menuitem7{
+  display: grid;
+  grid-row: 2;
+  grid-column: 3;
+}
+
+.menuitem8{
+  display: grid;
+  grid-row: 2;
+  grid-column: 4;
+}
+
+/* Footer CSS Code*/
+footer {
+  background-color: #99bb77;
+  margin: 10px 0px 8px;
+}
+  
+footer li {
+  display: inline-block;
+  padding: 4px 20px 0px;
+}
+  
+footer ul {
+  text-align: center;
+  margin: 10px;
+}
+  
+.socialbutton {
+  height: 40px;
+  width: 40px;
+}
+
+/* Media Queries */
+/* Mobile: from 320px*/
+@media (min-width: 320px) and (max-width: 767px) {
+  /* Header Queries CSS Code (anything that needs to be changed for mobile, code here.) */
+  h1 {
+    font-size: 30px;
+    text-shadow: 1px 1px 1px antiquewhite;
+    text-align: center;
+  }
+
+  header li {
+    padding: 2px;
+    font-size: 15px;
+    text-shadow: 0.5px 0.5px 0.5px black;
+  }
+
+  header ol{
+    margin: 0px;
+    text-align: center;
+  }
+
+  /* Menu Header Query CSS Code (Mobile) */
+  .menuheader {
+    padding: 5px;
+    margin: 0px;
+    font-size: 15px;
+    text-shadow: 1px 1px 1px lightblue;
+  }
+
+  /* Menu List Template/Placement Queries CSS Code (Mobile) */
+  .menulist {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    margin: 30px 10px 10px;
+  }
+  
+  .menuitem1{
+    display: grid;
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  .menuitem2{
+    display: grid;
+    grid-row: 2;
+    grid-column: 1;
+  }
+
+  .menuitem3{
+    display: grid;
+    grid-row: 3;
+    grid-column: 1;
+  }
+
+  .menuitem4{
+    display: grid;
+    grid-row: 4;
+    grid-column: 1;
+  }
+
+  .menuitem5{
+    display: grid;
+    grid-row: 5;
+    grid-column: 1;
+  }
+
+  .menuitem6{
+    display: grid;
+    grid-row: 6;
+    grid-column: 1;
+  }
+
+  .menuitem7{
+    display: grid;
+    grid-row: 7;
+    grid-column: 1;
+  }
+
+  .menuitem8{
+    display: grid;
+    grid-column: 1;
+    grid-row: 8;
+  }
+
+  /* Footer Queries CSS Code (Mobile) */
+  footer {
+    margin: 5px 0px 8px;
+    width: 100%;
+  }
+   
+  .socialbutton {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+/* Tablet: from 768px */
+@media (min-width:768px) and (max-width: 1024px) {
+  /*Header Queries CSS Code (Tablet)*/
+  h1 {
+   font-size: 40px;
+   text-shadow: 1px 1px 1px antiquewhite;
+   text-align: center;
+ }
+
+ header li {
+   padding: 10px;
+   font-size: 20px;
+   text-shadow: 0.5px 0.5px 0.5px black;
+ }
+
+ header ol{
+   margin: 0px;
+   text-align: center;
+ }
+
+  /* Menu Header Query CSS Code (Tablet) */
+  .menuheader {
+    padding: 5px;
+    margin: 0px;
+    font-size: 18px;
+    text-shadow: 1px 1px 1px lightblue;
+  }
+
+  /* Menu List Template/Placement Queries CSS Code (Tablet) */
+  .menulist {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px 10px 10px;
+  }
+
+  .menuitem1{
+    display: grid;
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  .menuitem2{
+    display: grid;
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+  .menuitem3{
+    display: grid;
+    grid-row: 2;
+    grid-column: 1;
+  }
+
+  .menuitem4{
+    display: grid;
+    grid-row: 2;
+    grid-column: 2;
+  }
+
+  .menuitem5{
+    display: grid;
+    grid-row: 3;
+    grid-column: 1;
+  }
+
+  .menuitem6{
+    display: grid;
+    grid-row: 3;
+    grid-column: 2;
+  }
+
+  .menuitem7{
+    display: grid;
+    grid-row: 4;
+    grid-column: 1;
+  }
+
+  .menuitem8{
+    display: grid;
+    grid-column: 4;
+    grid-row: 2;
+  }
+
+  /* Footer Queries CSS Code (Tablet) */
+  footer {
+    margin: 5px 0px 8px;
+    width: 100%;
+  }
+
+ .socialbutton {
+   height: 30px;
+   width: 30px;
+ }
+} 
+      
+
+

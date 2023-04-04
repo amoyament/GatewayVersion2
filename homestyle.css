@@ -1,0 +1,223 @@
+/* Home Page CSS Code */
+/* Affects entire document */
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: lightblue;
+  }
+  
+/*Header CSS Code*/
+h1 {
+  color: #4d3319;
+  text-align: left;
+  margin: 0% 2%;
+  text-shadow: 3px 3px 3px antiquewhite;
+}
+  
+/* Inline display for header to arrange items horizontally */
+header li {
+  display: inline;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 30px;
+  text-shadow: 1px 1px 1px black;
+}
+
+/* Pseudo classes on nav. bar items to change color on hover and after click. */
+a:link {
+  color: #546b3e;
+  text-decoration: none;
+}
+
+a:visited {
+  color:#2f3e21;
+}
+
+a:hover {
+  color: green;
+}
+
+/* Position: sticky; to keep nav. bar visible at the top (top: 0;) of the screen at all times. */
+/* Keep z-index: 2; becuase .nestphoto tries to overlap header. */
+header {
+  text-align: right;
+  background-color: lightblue;
+  position: sticky;
+  top:0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 30px;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+  border-bottom: solid 2px;
+  border-top: solid 2px;
+  z-index: 2;
+}
+
+header ol{
+  margin: 10px 40px;
+}
+
+h2 {
+  margin: 1px 0px 1px;
+}
+
+/* Home Page CSS Code*/
+.restinfo {
+  color: #4d3319;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 20px 200px;
+}
+  
+.restinfo h2 {
+  color: #4d3319;
+  font-size: 50px;
+  text-shadow: 2px 1px 1px antiquewhite;
+  text-align: center;
+}
+ 
+/* Keep z-index: 0; becuase .nestphoto tries to overlap header. */
+.nest {
+  height: 100px;
+  width: 104px;
+  opacity:0.8;
+  margin: 1px;
+  padding: 1px;
+  z-index: 0;
+}
+  
+.restinfo p {
+  font-size: 20px;
+  text-align: center;
+}
+
+/* border-radius to create curvature on corners. */
+.ownerphoto {
+  height: 267px;
+  width: 400px;
+  text-align: center;
+  border: solid 3px #744d25;
+  border-radius: 25px;
+}
+  
+figure {
+  text-align: center;
+}
+
+/* Lighthouse score taking off for "not having height and width, but it is listed here. */
+.heroimage {
+  width: 100vw;
+  height: auto;
+  border-bottom: solid 3px;
+}
+ 
+/* Footer CSS Code*/
+  
+  footer {
+    background-color: #99bb77;
+    margin: 10px 5px 8px;
+  }
+  
+  footer li {
+    display: inline-block;
+    padding: 4px 20px 0px;
+    margin: 0px;
+  }
+
+  ul.footerlist{
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    margin: 0px;
+  }
+  
+  .socialbutton {
+    height: 40px;
+    width: 40px;
+  }
+  
+/* Media Queries */
+/* Mobile: from 320px*/
+@media (min-width: 320px) and (max-width: 767px) {
+  /*Header Queries CSS Code (anything that needs to be changed for mobile, code here.)*/
+  h1 {
+    font-size: 30px;
+    text-shadow: 1px 1px 1px antiquewhite;
+    text-align: center;
+  }
+
+  header li {
+    padding: 2px;
+    font-size: 15px;
+    text-shadow: 0.5px 0.5px 0.5px black;
+  }
+
+  header ol{
+    margin: 0px;
+    text-align: center;
+  }
+
+  /* Restaurant Informantion Queries CSS Code (Mobile) */
+  .restinfo{
+    margin: 15px;
+  }
+
+  .restinfo h2{
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+
+  .ownerphoto {
+    height: 180px;
+    width: 269.66px;
+  }
+  /* Footer Query CSS Code (Mobile) */
+  .socialbutton {
+      height: 20px;
+      width: 20px;
+    }
+  }
+
+/* Tablet: from 768px */
+@media (min-width:768px) and (max-width: 1024px) {
+  /*Header Queries CSS Code (Tablet)*/
+  h1 {
+    font-size: 40px;
+    text-shadow: 1px 1px 1px antiquewhite;
+    text-align: center;
+  }
+
+  header li {
+    padding: 10px;
+    font-size: 20px;
+    text-shadow: 0.5px 0.5px 0.5px black;
+  }
+
+  header ol{
+    margin: 0px;
+    text-align: center;
+  }
+
+  /* Restaurant Information Queries CSS Code. (Tablet) */
+  .restinfo{
+    margin: 18px;
+  }
+
+  .restinfo h2{
+    font-size: 35px;
+    margin-bottom: 15px;
+  }
+
+  .ownerphoto {
+    height: 180px;
+    width: 269.66px;
+  }
+
+  /* Footer Query CSS Code (Tablet) */
+  .socialbutton {
+    height: 30px;
+    width: 30px;
+  }
+}
