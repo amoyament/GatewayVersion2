@@ -132,9 +132,6 @@ textarea {
 footer {
   background-color: #99bb77;
   margin: 0px;
-  position: fixed;
-  bottom: 0;
-  width: 100vw;
 }
       
 footer li {
@@ -216,8 +213,11 @@ footer ul {
   /* Footer Queries CSS Code (Mobile) */  
   footer {
     padding: 0px;
+    position: fixed;
+    bottom:0;
+    width: 100vw;
   }
-
+  
   .socialbutton {
     height: 20px;
     width: 20px;
@@ -284,6 +284,12 @@ footer ul {
   }
 
   /* Footer Query CSS Code (Tablet) */
+  footer {
+    position: fixed;
+    bottom:0;
+    width: 100vw;
+  }
+  
   .socialbutton {
     height: 20px;
     width: 20px;
